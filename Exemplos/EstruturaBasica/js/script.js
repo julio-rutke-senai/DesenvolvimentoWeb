@@ -5,4 +5,6 @@ window.onload = function() {
         links[i].setAttribute("class", "link");
     }
 
+    
+
 }
