@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Cadastro from './Pages/Cadastro';
 import Home from './Pages/Home';
 import Contato from './Pages/Contato';
+import Editar from './Pages/Editar';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="/editar/:id" element={<Editar />} />
       </Routes>
       <Footer>Direitos Reservados - Julio Cezar Rutke</Footer>
     </div>

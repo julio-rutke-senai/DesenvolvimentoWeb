@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Tabela = (props) => {
 
     return(
@@ -10,12 +12,12 @@ const Tabela = (props) => {
                     </div>
                     <div id="body_tabela">
                         {
-                            props.livrosSalvos.map(livro => (
-                                <div class="livro">
+                            props.livrosSalvos.map((livro, index) => (
+                                <div class="livro" key={index}>
                                     <div class="nome">{livro.nome}</div>
                                     <div class="paginas">{livro.paginas}</div>
                                     <div class="autor">{livro.autor}</div>
-                                    <div class="acoes">Ações</div>
+                                    <div class="acoes"><Link to="/editar/2">Editar</Link></div>
                                 </div>
                             ))
                         }
