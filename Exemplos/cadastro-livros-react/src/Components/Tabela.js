@@ -5,19 +5,19 @@ const Tabela = (props) => {
     return(
         <section id="tabela">
                     <div id="header_tabela">
-                        <div class="nome">Nome</div>
-                        <div class="paginas">Páginas</div>
-                        <div class="autor">Autor</div>
-                        <div class="acoes">Ações</div>
+                        <div className="nome">Nome</div>
+                        <div className="paginas">Páginas</div>
+                        <div className="autor">Autor</div>
+                        <div className="acoes">Ações</div>
                     </div>
                     <div id="body_tabela">
                         {
                             props.livrosSalvos.map((livro, index) => (
-                                <div class="livro" key={index}>
-                                    <div class="nome">{livro.nome}</div>
-                                    <div class="paginas">{livro.paginas}</div>
-                                    <div class="autor">{livro.autor}</div>
-                                    <div class="acoes"><Link to="/editar/2">Editar</Link></div>
+                                <div className="livro" key={index}>
+                                    <div className="nome">{livro.nome}</div>
+                                    <div className="paginas">{livro.paginas}</div>
+                                    <div className="autor">{livro.autor}</div>
+                                    <div className="acoes"><Link to="/editar/2">Editar</Link></div>
                                 </div>
                             ))
                         }

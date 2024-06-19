@@ -7,11 +7,13 @@ import Cadastro from './Pages/Cadastro';
 import Home from './Pages/Home';
 import Contato from './Pages/Contato';
 import Editar from './Pages/Editar';
+import Formulario from './Components/Formulario';
 
 function App() {
   return (
     <div className="App">
       <Header>Cadastro de Livros</Header>
+      <Formulario></Formulario>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cadastro" element={<Cadastro />} />

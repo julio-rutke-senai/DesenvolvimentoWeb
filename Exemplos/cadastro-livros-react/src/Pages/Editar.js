@@ -42,9 +42,9 @@ const Editar = () => {
     return( <main>
                 <section id="campos">
                     <form id="formulario"> 
-                        <input onChange={handleNome} class="campos" type="text" name="nome" placeholder="Nome do Livro" /> 
-                        <input class="campos" type="text" name="paginas" placeholder="Páginas do Livro" /> 
-                        <input class="campos" type="text" name="autor" placeholder="Autor do Livro" />
+                        <input onChange={handleNome} className="campos" type="text" name="nome" placeholder="Nome do Livro" /> 
+                        <input className="campos" type="text" name="paginas" placeholder="Páginas do Livro" /> 
+                        <input className="campos" type="text" name="autor" placeholder="Autor do Livro" />
                         <p id="mensagem_form"></p> 
                         <a onClick={handleSubmit} id="botao_gravar">Salvar</a>
                     </form>
